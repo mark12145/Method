@@ -26,8 +26,8 @@
 
   <!-- =====  INFO ===== -->
   <section class="room-details">
-    <h1>Provate room</h1>
-    <img src="6cc0e7e0-0d17-4580-9482-e0b2752a6c04.jpeg" alt="Training Hall" class="room-img">
+    <h1>Private Room</h1>
+    <img src="41abbdd4-d680-4f35-be98-b090c5038211.jpeg" alt="Private Room" class="room-img">
     <p class="price">EGP 100 / hour</p>
   </section>
 
@@ -117,6 +117,11 @@
 
   <!-- ===== SCRIPT ===== -->
   <script>
+    // Include room price updater
+    const script = document.createElement('script');
+    script.src = 'room-price-updater.js';
+    document.head.appendChild(script);
+
     // Dark/Light Mode
     const themeToggle = document.getElementById('theme-toggle');
     themeToggle.addEventListener('click', () => {

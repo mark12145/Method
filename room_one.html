@@ -132,6 +132,11 @@
 
   <!-- ===== SCRIPT ===== -->
   <script>
+    // Include room price updater
+    const script = document.createElement('script');
+    script.src = 'room-price-updater.js';
+    document.head.appendChild(script);
+
     // Dark/Light Mode
     const themeToggle = document.getElementById('theme-toggle');
     themeToggle.addEventListener('click', () => {
